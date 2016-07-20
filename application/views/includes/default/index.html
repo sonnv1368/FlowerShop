@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="css/preview.css"/>
+<link rel="stylesheet" type="text/css" href="css/wt-rotator.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/jquery.wt-rotator.min.js"></script>
+<script type="text/javascript" src="js/preview.js"></script> 
+<title>Hoa dep tuoi</title>
+<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+</head>
+<body>
+<div id="task-bar">
+	<div class="search"><input type="text" name="search" id="search" placeholder="Tìm kiếm"/></div>
+	<div class="login">
+		<input type="text" value="" name="username" id="username" placeholder="Nhập tên tài khoản" />
+		<input type="password" value="" name="password" id="password" placeholder="Nhập mật khẩu" />
+		<button type="submit" value="" name="submit" id="submit" >Đăng nhập</button>
+	</div>
+	</div>
+	<div id="wrapper">
+		<div class="header">
+			<img class="logo" src="images/logo.png" width="" height=""/>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Giới thiệu</a></li>
+					<li><a href="#">Sản phẩm</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wt-rotator">
+            <a href="#"></a>            
+            <div class="desc"></div>
+            <div class="preloader"></div>
+            <div class="c-panel">
+                <div class="thumbnails">
+                    <ul>
+                        <li>
+                            <a href="images/madness_arch2.jpg" title="nhatnghe.com"></a>
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=80181" target="_blank"></a>                  
+                        </li>
+                        <li>
+                            <a href="images/triworks_abstract17.jpg" title="khoaphp@yahoo.com"></a>
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=90292" target="_blank"></a>                        
+                        </li>
+                        <li>
+                            <a href="images/krazy-kartoons-robot-dj02.jpg" title="khoaphp@yahoo.com"></a>
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=90048" target="_blank"></a>
+                                                        
+                        </li>
+                        <li>
+                            <a href="images/sf.jpg" title="nhatnghe.com"></a>
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=89969" target="_blank"></a>
+                                                                            	
+                        </li>
+                        <li>
+                            <a href="images/triworks_abstract26.jpg" title="khoaphp@yahoo.com"></a>   
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=89170" target="_blank"></a>
+                                                                                  	                   
+                        </li>
+                        <li>
+                            <a href="images/tokyo.jpg" title="nhatnghe.com"></a>                  
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=52130" target="_blank"></a>
+                                                                   	                          
+                        </li>
+                        <li>
+                            <a href="images/scottwills_building2.jpg" title="khoaphp@yahoo.com"></a>        
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=65507" target="_blank"></a>
+                        </li>     
+                        <li>
+                            <a href="images/highway.jpg" title="nhatnghe.com"></a>                    
+                            <a href="http://nhatnghe.com/forum/showthread.php?t=34299" target="_blank"></a>                     	                           
+                        </li>     
+                    </ul>
+                </div>     
+            </div>
+        </div>	
+		</div>
+		<div class="main">
+			<div class="sidebar">
+				<div class="widget">
+					<h3>Danh mục sản phẩm</h3>
+					<ul class="categories">
+						<li><a href="#">Hoa tình yêu</a></li>
+						<li><a href="#">Hoa xin lỗi</a></li>
+						<li><a href="#">Hoa đám cưới</a></li>
+						<li><a href="#">Hoa sinh nhật</a></li>
+						<li><a href="#">Hoa chia buồn</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div class="product">
+					<h3>Hoa tình yêu</h3>
+					<div class="post">
+					`	<a class="group4" href="images/products/dang tron trai tim.jpg" title="Dâng trọn trái tim"><img src="images/products/dang tron trai tim.jpg" width="200" height="150" alt="" /></a>
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<a class="group4" href="images/products/dang tron trai tim.jpg" title="Dâng trọn trái tim" ><img src="images/products/dang tron trai tim.jpg" width="200" height="150" /></a>
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn Dâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<a class="group4" href="images/products/dang tron trai tim.jpg" title="Dâng trọn trái tim"><img src="images/products/dang tron trai tim.jpg" width="200" height="150" /></a>
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái timDâng trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+				</div>
+				
+				<div class="product">
+					<h3>Hoa sinh nhật</h3>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái timDâng trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái Dâng trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+					<div class="post">
+					`	<img src="images/products/dang tron trai tim.jpg" width="200" height="150" />
+						<p class="title">Dâng trọn trái tim</p>
+						<p class="description">Dâng trọn trái timDâng trọn trái Dâng trọn trái timDâng trọn trái timDâng trọn trái tim</p>
+						<p class="price">150.000 VNĐ</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer">
+			<div class="top-footer"></div>
+			<div class="bottom-footer">
+				<p>Hoa tươi đẹp</p>
+				<p>Copyright &copy; 2013 Nguyễn Thị Phượng </p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
